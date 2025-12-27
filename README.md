@@ -70,16 +70,6 @@ URL: https://randomimagegenerator.vercel.app/
 - 🌐 API-based image fetching (Unsplash / Lorem Picsum)  
 
 
-## 👨‍💻 Author
+### ⭐ Acknowledgements 
 
-**Prateek Bahad**  
-Frontend / MERN Stack Developer  
-
-
-## 📄 License
-
-This project is licensed under the **MIT License**.  
-Feel free to use, modify, and distribute it.
-
-
-### ⭐ If you like this project, don’t forget to give it a star!
+If you like this project, don’t forget to give it a star!
