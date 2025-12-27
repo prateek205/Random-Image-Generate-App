@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random Images Generator | Enhanced</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="asset/favicon.ico" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1><i class="fas fa-random"></i> Random Image Generator</h1>
+        <p class="subtitle">Discover beautiful random images with smooth transitions</p>
+      </header>
+
+      <main class="main-content">
+        <div class="image-container">
+          <div class="loading-spinner">
+            <div class="spinner"></div>
+            <p>Loading Image...</p>
+          </div>
+          <img class="img fade-in" id="picsumImage" alt="Random image" />
+          <div class="image-info">
+            <p id="imageDetails">Image will appear here</p>
+            <div class="image-stats">
+              <span><i class="fas fa-expand-arrows-alt"></i> 1024×500</span>
+              <span><i class="fas fa-source"></i> Picsum Photos</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="controls">
+          <div class="control-group">
+            <button class="btn generate-btn" id="generateBtn">
+              <i class="fas fa-sync-alt"></i> Generate New Image
+            </button>
+            <button class="btn mode-toggle" id="toggleMode">
+              <i class="fas fa-play"></i> Auto Mode: ON
+            </button>
+          </div>
+          
+          <div class="control-group">
+            <label for="intervalRange">Change Interval: <span id="intervalValue">3</span>s</label>
+            <input type="range" id="intervalRange" min="1" max="10" value="3" class="slider">
+          </div>
+
+          <div class="image-actions">
+            <button class="action-btn" id="downloadBtn" title="Download Image">
+              <i class="fas fa-download"></i>
+            </button>
+            <button class="action-btn" id="fullscreenBtn" title="Fullscreen">
+              <i class="fas fa-expand"></i>
+            </button>
+            <button class="action-btn" id="favoriteBtn" title="Add to Favorites">
+              <i class="far fa-heart"></i>
+            </button>
+            <button class="action-btn" id="shareBtn" title="Share">
+              <i class="fas fa-share-alt"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="history-section">
+          <h3><i class="fas fa-history"></i> Recent Images</h3>
+          <div class="history-grid" id="historyGrid">
+            <!-- History images will be added here dynamically -->
+          </div>
+        </div>
+      </main>
+
+      <footer class="footer">
+        <p>Made with <i class="fas fa-heart" style="color: #e74c3c;"></i> by Prateek | Images from <a href="https://picsum.photos" target="_blank">Lorem Picsum</a></p>
+      </footer>
+    </div>
+
+    <div class="notification" id="notification">
+      <span id="notificationText">New image loaded successfully!</span>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
