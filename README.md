@@ -21,7 +21,7 @@ This application fetches and displays random images dynamically with a single bu
 - **JavaScript (Vanilla JS)** – Logic & DOM manipulation  
 
 ## 📺 Live Demo
-URL: https://randomimagegenerator.vercel.app/
+URL: https://random-image-generate-app.vercel.app/
 
 ## 📂 Project Structure
 
